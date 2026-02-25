@@ -16,6 +16,7 @@ public class PieController : Controller
 
     public IActionResult List() // we create a controller action that will handle the requests to the /Pie/List URL, so we can display the list of pies in the view
     {
+        ViewBag.CurrentCategory = "Cheese cakes"; // we set the CurrentCategory property of the ViewBag to the name of the category that we want to display in the view, so we can display it in the view
          return View(_pieRepository.AllPies); // we return the view for the List action, and we pass the list of pies from the repository to the view, so we can display them in the view
     }
 }

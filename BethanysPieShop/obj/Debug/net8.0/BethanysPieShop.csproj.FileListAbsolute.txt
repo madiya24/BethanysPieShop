@@ -24,3 +24,5 @@
 /Users/chrines/Desktop/Personal_Dev/BethanysPieShop/BethanysPieShop/obj/Debug/net8.0/BethanysPieShop.pdb
 /Users/chrines/Desktop/Personal_Dev/BethanysPieShop/BethanysPieShop/obj/Debug/net8.0/BethanysPieShop.genruntimeconfig.cache
 /Users/chrines/Desktop/Personal_Dev/BethanysPieShop/BethanysPieShop/obj/Debug/net8.0/ref/BethanysPieShop.dll
+/Users/chrines/Desktop/Personal_Dev/BethanysPieShop/BethanysPieShop/obj/Debug/net8.0/BethanysPieShop.RazorAssemblyInfo.cache
+/Users/chrines/Desktop/Personal_Dev/BethanysPieShop/BethanysPieShop/obj/Debug/net8.0/BethanysPieShop.RazorAssemblyInfo.cs
