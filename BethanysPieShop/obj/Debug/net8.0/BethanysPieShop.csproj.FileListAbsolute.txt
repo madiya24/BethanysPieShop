@@ -26,3 +26,5 @@
 /Users/chrines/Desktop/Personal_Dev/BethanysPieShop/BethanysPieShop/obj/Debug/net8.0/ref/BethanysPieShop.dll
 /Users/chrines/Desktop/Personal_Dev/BethanysPieShop/BethanysPieShop/obj/Debug/net8.0/BethanysPieShop.RazorAssemblyInfo.cache
 /Users/chrines/Desktop/Personal_Dev/BethanysPieShop/BethanysPieShop/obj/Debug/net8.0/BethanysPieShop.RazorAssemblyInfo.cs
+/Users/chrines/Desktop/Personal_Dev/BethanysPieShop/BethanysPieShop/bin/Debug/net8.0/libman.json
+/Users/chrines/Desktop/Personal_Dev/BethanysPieShop/BethanysPieShop/bin/Debug/net8.0/BethanysPieShop.staticwebassets.runtime.json

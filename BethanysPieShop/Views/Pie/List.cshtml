@@ -1,15 +1,30 @@
-﻿@model PieListViewModel // we specify the model type that we want to use in the view, so we can access the properties of the model in the view
+﻿@model PieListViewModel // this is how we specify the model that we want to use in our view, the @model directive is used to specify the type of the model that we want to use in our view, in this case we are using the PieListViewModel which is a class that we have created in our Models folder, this class contains a list of pies and a string for the current category, we will use this model to display the list of pies and the current category in our view
 
+<h1>@Model.CurrentCategory</h1>
 
+<div class="row row-cols-1 row-cols-md-3 g-4">
 
-<h1>@Model.CurrentCategory</h1> 
-@foreach (var pie in Model.Pies) // we loop through the list of pies that we passed from the controller action, so we can display them in the view
-{
-<div>
-<h3>@pie.Name</h3> 
-<h5>@pie.Price.ToString("C")</h5> 
-<h6>@pie.Category.CategoryName</h6> 
+    @foreach (var pie in Model.Pies)
+    {
+        <div class="col">
+            <div class="card pie-card">
+                <img src="@pie.ImageThumbnailUrl" class="card-img-top" alt="@pie.Name">
+                <div class="card-body pie-button">
+                    <h4 class="d-grid">
+                    </h4>
+
+                    <div class="d-flex justify-content-between mt-2">
+                        <h2 class="text-start">
+                            <a class="pie-link">@pie.Name</a>
+                        </h2>
+                        <h5 class="text-nowrap">
+                            @pie.Price.ToString("c")
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
 </div>
-}
-
     
