@@ -1,22 +1,15 @@
-﻿@model BethanysPieShop.ViewModels.PieListViewModel // we specify the model type that we want to use in the view, so we can access the properties of the model in the view
-<!DOCTYPE html>
+﻿@model PieListViewModel // we specify the model type that we want to use in the view, so we can access the properties of the model in the view
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Bethany's Pie Shop</title>
-</head>
-<body>
-    <h1>@Model.CurrentCategory</h1> 
-    @foreach (var pie in Model.Pies) // we loop through the list of pies that we passed from the controller action, so we can display them in the view
-    {
-        <div>
-            <h3>@pie.Name</h3> 
-            <h5>@pie.Price.ToString("C")</h5> 
-            <h6>@pie.Category.CategoryName</h6> 
-        </div>
-    }
+
+
+<h1>@Model.CurrentCategory</h1> 
+@foreach (var pie in Model.Pies) // we loop through the list of pies that we passed from the controller action, so we can display them in the view
+{
+<div>
+<h3>@pie.Name</h3> 
+<h5>@pie.Price.ToString("C")</h5> 
+<h6>@pie.Category.CategoryName</h6> 
+</div>
+}
 
     
-</body>
-</html>
