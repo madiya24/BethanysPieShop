@@ -1,4 +1,4 @@
-﻿@model IEnumerable<BethanysPieShop.Models.Pie> // we specify the model type that we want to use in the view, so we can access the properties of the model in the view
+﻿@model BethanysPieShop.ViewModels.PieListViewModel // we specify the model type that we want to use in the view, so we can access the properties of the model in the view
 <!DOCTYPE html>
 
 <html>
@@ -7,8 +7,8 @@
     <title>Bethany's Pie Shop</title>
 </head>
 <body>
-    <h1>@ViewBag.CurrentCategory</h1> 
-    @foreach (var pie in Model) // we loop through the list of pies that we passed from the controller action, so we can display them in the view
+    <h1>@Model.CurrentCategory</h1> 
+    @foreach (var pie in Model.Pies) // we loop through the list of pies that we passed from the controller action, so we can display them in the view
     {
         <div>
             <h3>@pie.Name</h3> 
